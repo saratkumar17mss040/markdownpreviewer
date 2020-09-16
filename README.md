@@ -1,16 +1,16 @@
 ## Markdown Previewer
 
-A simple markdown previewer web application which let's you convert Markdown into HTML !
+A simple react markdown previewer web application which let's you convert Markdown into HTML !
 
 ## Wireframe
 
 Desktop version
 
-![desktop]()
+![desktop](./public/desktop.png)
 
 Mobile version
 
-![mobile]()
+![mobile](./public/mobile.png)
 
 ### How will users interact with your web site?
 
