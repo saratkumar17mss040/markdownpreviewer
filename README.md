@@ -1,3 +1,36 @@
+## Markdown Previewer
+
+A simple markdown previewer web application which let's you convert Markdown into HTML !
+
+## Wireframe
+
+Desktop version
+
+![desktop]()
+
+Mobile version
+
+![mobile]()
+
+### How will users interact with your web site?
+
+Users will be able to type in the editor on the left with markdown syntax and it will be rendered on the right area and users will be able to clear the editor and the rendered output
+
+
+### What library do you plan to use ?
+
+Marked library - https://marked.js.org/
+
+### Tech Stack 
+
+React, Sass
+
+
+### Deployment 
+
+I will deploy it through github pages
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
