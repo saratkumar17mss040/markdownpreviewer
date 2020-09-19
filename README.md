@@ -8,9 +8,6 @@ Desktop version
 
 ![desktop](./public/desktop.png)
 
-Mobile version
-
-![mobile](./public/mobile.png)
 
 ### How will users interact with your web site?
 

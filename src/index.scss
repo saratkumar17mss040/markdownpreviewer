@@ -1,6 +1,8 @@
+// sass variables
 $defaultMargin: 0;
 $defaultPadding: 0;
 $boxSizing: border-box;
+$marginLeft: 20px;
 
 * {
 	margin: $defaultMargin;
@@ -16,6 +18,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+// grid
 .row {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -26,19 +29,19 @@ body {
 }
 
 .input {
-	margin-left: 20px;
+	margin-left: $marginLeft;
 	margin-top: 20px;
 }
-
 
 #preview {
 	color: #000;
 	font-size: 16px;
-	margin-left: 20px;
+	margin-left: $marginLeft;
 	padding-left: 25px;
 	max-width: 57vw;
 }
 
+// stlyling clear button
 .btn {
 	position: absolute;
 	padding-left: 35px;
@@ -53,5 +56,3 @@ body {
 	margin-left: -880px;
 	margin-top: 500px;
 }
-
-

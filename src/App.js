@@ -3,9 +3,11 @@ import './index.scss';
 import Markdowneditor from './Markdowneditor';
 import Preview from './Preview';
 
+// Main - App component
 class App extends Component {
 	constructor() {
 		super();
+		// states of the app component
 		this.state = {
 			input: `# Welcome to my React Markdown Previewer!
 
@@ -13,6 +15,7 @@ class App extends Component {
 ### And here's some other cool stuff:
   
 Heres some code, \`<div></div>\`, between 2 backticks.
+
 
 \`\`\`
 // this is multi-line code:
@@ -23,6 +26,8 @@ function anotherExample(firstLine, lastLine) {
   }
 }
 \`\`\`
+
+
   
 You can also make text **bold**... whoa!
 Or _italic_.
@@ -58,12 +63,14 @@ And here. | Okay. | I think we get it.
 		this.clearEditorAndPreview = this.clearEditorAndPreview.bind(this);
 	}
 
+	// setInput method
 	setInput(event) {
 		this.setState({
 			input: event.target.value,
 		});
 	}
 
+	// clearEditorAndPreview method
 	clearEditorAndPreview() {
 		this.setState({
 			input: '',
@@ -73,18 +80,29 @@ And here. | Okay. | I think we get it.
 	render() {
 		return (
 			<div className="row">
-				{/* <header className="App-header">
-      </header> */}
+				{/* Markdowneditor component */}
 				<Markdowneditor
 					input={this.state.input}
 					setInput={this.setInput}
 					clearEditorAndPreview={this.clearEditorAndPreview}
 				/>
-				<Preview 
-					input={this.state.input} />
+				{/* Preview component */}
+				<Preview input={this.state.input} />
+				<footer style={{ "backgroundColor": "#000" ,"padding": "15px","marginTop":"25px"}}>
+					<p style={{"color": "#fff", "fontSize": "18px","textAlign": "center"}}>
+					Made with
+					<span role="img" aria-label="green-heart-emoji">
+						💚
+					</span>
+					by sarath and the github link for the repo - click  
+					<a style={{"color": "green", "marginLeft": "10px"}} href="https://github.com/saratkumar17mss040/markdownpreviewer">
+						 here!
+					</a></p>
+				</footer>
 			</div>
 		);
 	}
 }
 
+// export app component
 export default App;
