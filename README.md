@@ -2,6 +2,12 @@
 
 A simple react markdown previewer web application which let's you convert Markdown into HTML !
 
+## To run the project:
+
+1. Clone this repo
+2. Run `npm install`
+3. Run `npm start`
+
 ## Wireframe
 
 Desktop version
