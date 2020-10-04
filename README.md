@@ -15,7 +15,7 @@ Desktop version
 ![desktop](./public/desktop.png)
 
 
-### How will users interact with your web site?
+### How will users interact with your web application?
 
 Users will be able to type in the editor on the left with markdown syntax and it will be rendered on the right area and users will be able to clear the editor and the rendered output
 
